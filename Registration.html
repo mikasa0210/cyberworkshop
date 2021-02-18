@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome!</title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/rwq3huh.css">
+
+        <style>
+            body {
+                background-image: url("assets/background/Registration Background.jpg");
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        </style>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script>
+            function SubForm (){
+                $.ajax({
+                    url:"https://api.apispreadsheets.com/data/7748/",
+                    type:"post",
+                    async: false,
+                    data:$("#registrationForm").serializeArray(),
+                    success: function(){
+                        alert("Form Data Submitted");
+                        alert("The website is specifically made for PC. If you are using a mobile device, expect that the layout might change.");
+                        window.location.href = "Home.html"
+                    },
+                    error: function(){
+                        alert("There was an error")
+                    }
+                });
+            };
+
+        </script>
+        <script src="script.js"></script>
+    </head>
+
+    <body class="flexContainer flex--justifyContent flex--alignItems">
+        <main class="flexContainer flex--justifyContent flex--alignItems flex--row" id="registrationCard">
+            <div id="registrationCardHeader" class="flexContainer flex--alignItems flex--justifyContent">
+                <header>
+                    <h1 style="font-size: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 300)));">Before you proceed, please answer the form so the team will know who are the possible participants. Any information submitted will be kept confidential and will not be shared to any third party, thank you!</h1>
+                </header>
+            </div>
+
+            <div id="registrationCardContent" class="flexContainer flex--justifyContent flex--alignItems flex--column">
+                <form id="registrationForm">
+                    <div id="nameContainer" class="flexContainer flex--column">
+                        <div id="firstNameContainer" class="flexContainer flex--row">
+                            <label for="firstName"><strong>First Name:</strong></label>
+                            <input type="text" name="firstName" id="firstName" maxlength="20" required>
+                        </div> 
+                        
+                        <div id="lastNameContainer" class="flexContainer flex--row">
+                            <label for="lastName"><strong>Last Name:</strong></label>
+                            <input type="text" name="lastName" id="lastName" maxlength="20" required>
+                        </div>
+                    </div>
+
+                    <div id="emailAgeContainer" class="flexContainer flex--column">
+                        <div id="emailContainer" class="flexContainer flex--row">
+                            <label for="email"><strong>Email:</strong></label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div id="ageContainer" class="flexContainer flex--row">
+                            <label for="age"><strong>Age:</strong></label>
+                            <input type="number" name="age" id="age" min="10" max="99" required>
+                        </div>
+                    </div>
+
+                    <div id="city" class="flexContainer flex--column">
+                        <div id="cityContainer" class="flexContainer flex--row">
+                            <label for="city"><strong>City Currently Living In:</strong></label>
+                            <select name="city" id="city">
+                                <option value="Caloocan City">Caloocan City</option>
+                                <option value="Malabon City">Malabon City</option>
+                                <option value="Navotas City">Navotas City</option>
+                                <option value="Valenzuela City">Valenzuela City</option>
+                                <option value="Quezon City">Quezon City</option>
+                                <option value="Marikina City">Marikina City</option>
+                                <option value="Pasig City">Pasig City</option>
+                                <option value="Taguig City">Taguig City</option>
+                                <option value="Makati City">Makati City</option>
+                                <option value="Manila City">Manila City</option>
+                                <option value="Mandaluyong City">Mandaluyong City</option>
+                                <option value="San Juan City">San Juan City</option>
+                                <option value="Pasay City">Pasay City</option>
+                                <option value="Para&#241;aque City">Para&#241;aque City</option>
+                                <option value="Las Pi&#241;as City">Las Pi&#241;as City</option>
+                                <option value="Muntinlupa City">Muntinlupa City</option>
+                                <option value="Outside of Metro Manila">Outside of Metro Manila</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div class="flexContainer flex--flex-end" style="width: 100%;">
+                    <button type="submit" id="submitRegistration" class="flex--end" onclick="SubForm();">Submit</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

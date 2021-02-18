@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/rwq3huh.css">
+
+        <style>
+            body {
+                background-image: url("assets/background/About Banner.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="navIcon">
+            <img src="assets/icon/Menu Icon.png" alt="Menu" width="100%" height="100%">
+        </div>
+
+        <nav id="navContainer">
+		    <div id="navSection" class="flexContainer flex--justifyContent flex--column">
+                <a class="navContent flexContainer flex--alignItems flex--row" href="Home.html">
+                    <img src="assets/icon/Home Icon.png" alt="Home" width="100%" height="100%">
+                    <div class="navText">Home</div>
+                </a>
+
+                <a class="navContent flexContainer flex--alignItems flex--row" href="Programming Workshop.html">
+                    <img src="assets/icon/Code Icon.png" alt="Code" width="100%" height="100%">
+                    <div class="navText">Programming Workshop</div>
+                </a>
+                
+                <a class="navContent flexContainer flex--alignItems flex--row bottomBorder" href="Cyberbullying Awareness Workshop.html">
+                    <img src="assets/icon/CB Icon.png" alt="Cyberbullying" width="100%" height="100%">
+                    <div class="navText">Cyberbullying Awareness Workshop</div>
+                </a>
+
+                <a class="navContent flexContainer flex--alignItems flex--row" href="About.html">
+                    <img src="assets/icon/About Icon.png" alt="About" width="100%" height="100%">
+                    <div class="navText">About</div>
+                </a>
+
+                <a class="navContent flexContainer flex--alignItems flex--row" href="Contact.html">
+                    <img src="assets/icon/Contact Icon.png" alt="Contact" width="100%" height="100%">
+                    <div class="navText">Contact</div>
+                </a>
+            </div>
+        </nav>
+        
+        <header class="flexContainer flex--justifyContent flex--alignItems" id="aboutBanner">
+            <h1>About</h1>
+        </header>
+        <main class="flexContainer flex--justifyContent flex--column">
+        <div class="flexContainer flex--row">
+            <div id="goalContainer" class="rightBorder">
+                <div class="flexContainer flex--row flex--justifyContent">
+                    <header><h2>What are the goals?</h2></header>
+                    <img src="assets/icon/Goal Icon.png" alt="Goal; Bullseye" width="15%" height="15%" class="aboutContentIcons">
+                </div>
+
+                <div>
+                    <ul>
+                        <li>To teach people the basics of programming</li>
+                        <li>To give young adults an incredibly important life skill that can net them well paying jobs</li>
+                        <li>To enlighten young adults on the topic of cyberbullying and to teach them the different methods they can use to prevent and protect themselves from cyberbullying</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="placeandtimeContainer">
+                <div class="flexContainer flex--row flex--justifyContent">
+                    <header><h2>Where and When is this happening?</h2></header>
+                    <img src="assets/icon/Map Marker Icon.png" alt="Map Marker" width="15%" height="15%" class="aboutContentIcons">
+                    <img src="assets/icon/Clock Icon.png" alt="Clock; Time" width="15%" height="15%" class="aboutContentIcons">
+                </div>
+
+                <div style="font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));">
+                    The workshop will be held via Zoom meeting every Monday, Wednesday, and Friday of the week from 3:00pm-5:00pm
+                </div>
+            </div>
+        </div>
+
+            <div id="scheduleTable" class="topBorder">
+                <div id="scheduleHeader" class="flexContainer flex--justifyContent flex--row">
+                    <header><h2>Schedule</h2></header>
+                    <img src="assets/icon/Schedule Icon.png" alt="Schedule" width="15%" height="15%">
+                </div>
+                <table>
+                    <thead>
+                      <tr>
+                        <th class="tableHead">Section</th>
+                        <th class="tableHead">Activity</th>
+                        <th class="tableHead">Duration</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Welcome</td>
+                        <td><ul><li>Registration</li></ul></td>
+                        <td>2 - 5 minutes</td>
+                      </tr>
+                      <tr>
+                        <td>Introduction</td>
+                        <td><ul><li>Introduces the aim of the workshop and its purpose</li></ul></td>
+                        <td>2 - 5 minutes</td>
+                      </tr>
+                      <tr>
+                        <td>Expectation from the Workshop</td>
+                        <td><ul><li>Sets up the expectation of the participants through warm up activities</li><li>A brief presentation of the topic for the current session</li></ul></td>
+                        <td>2 - 5 minutes</td>
+                      </tr>
+                      <tr>
+                        <td>Lesson Discussion/Creating</td>
+                        <td><ul><li>An in-depth discussion about the lesson</li><li>After the discussion, the participants will apply their knowledge in creating their website</li><li>After 1 front end web programming language is finished, projects will be given to the participants</li></ul></td>
+                        <td>Approximately 1 hour and 15 minutes</td>
+                      </tr>
+                      <tr>
+                        <td>Break time</td>
+                        <td><ul><li>To allow the participants to relax and absorb all the info they had just learned</li></ul></td>
+                        <td>5 - 7 minutes</td>
+                      </tr>
+                      <tr>
+                        <td>Open Forum</td>
+                        <td><ul><li>Raises questions from the audience and answers from the speakers</li></ul></td>
+                        <td>Maximum of 15 minutes</td>
+                      </tr>
+                      <tr>
+                        <td>Evaluation</td>
+                        <td><ul><li>Seek evaluation from the audience about the program for improvement</li></ul></td>
+                        <td>5 - 7 minutes</td>
+                      </tr>
+                    </tbody>
+                    </table>
+            </div>
+        </main>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,622 @@
+/* fluid font sizes
+    p element = font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+    h1 element = font-size: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 300)));
+    h2 element = font-size: calc(34px + (44 - 34) * ((100vw - 320px) / (1920 - 300)));
+    h3 element = font-size: calc(28px + (38 - 28) * ((100vw - 320px) / (1920 - 300)));
+    homeGreeting = font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 300)));
+*/
+
+* {
+    font-family: muli, arial;
+    word-wrap: normal;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:#181818;
+    color: #ececec;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navContainer {
+    display: none;
+    background-color: #212121;
+    width: auto;
+    height: auto;
+    color: #7a7a7a;
+    position: fixed;
+    z-index: 10;
+    padding: 0.2vw;
+}
+
+#navSection > a > img {
+    filter: invert(.6);
+    max-width: 3vw;
+    min-width: 3vw;
+    height: auto;
+    padding: 0.2vw;
+}
+
+.navContent:hover {
+    color: #ececec;
+}
+
+#navSection > a > img:hover {
+    filter: invert(1);
+    min-width: 3vw;
+    max-width: 3vw;
+    height: auto;
+}
+
+#navIcon {
+    filter: invert(.6);
+    z-index: 11;
+    max-width: 3vw;
+    min-width: 3vw;
+    height: auto;
+    background-color: transparent;
+    padding: 1vw;
+}
+
+#navIcon:hover {
+    filter: invert(1);
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.flex--justifyContent {
+    justify-content: center;
+}
+
+.flex--alignItems {
+    align-items: center;
+}
+
+.flex--column {
+    flex-direction: column;
+}
+
+.flex--row {
+    flex-direction: row;
+}
+
+.flex--end {
+    align-self: flex-end;
+}
+
+.flex--start {
+    align-self: flex-start;
+}
+
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
+.flex--baseline {
+    align-items: baseline;
+}
+
+.flex--flex-start {
+    justify-content: flex-start;
+}
+
+.flex--flex-end {
+    justify-content: flex-end;
+}
+
+main {
+    width: 100%;
+}
+
+.bottomBorder {
+    border-bottom-color: #7a7a7a;
+    border-bottom-style: solid;
+}
+
+.rightBorder {
+    border-right-color: #7a7a7a;
+    border-right-style: solid;
+}
+
+.topBorder {
+    border-top-color: #7a7a7a;
+    border-top-style: solid;
+}
+
+a.navContent {
+    color: #7a7a7a;
+    text-decoration: none;
+    padding: 0.2vw;
+}
+
+a.navContent:hover {
+    color:  #ececec;
+    text-decoration: none;
+}
+
+input {
+    border: transparent;
+    border-bottom-color: #ececec;
+    border-bottom-style: solid;
+    background-color: transparent;
+    color: #ececec;
+    font-size: inherit;
+    margin: 2%;
+    width: 100%;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+}
+
+input:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+#homeGreetings {
+    background-color: #181818;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    padding: 0%;
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 300)));
+}
+
+#cyberbullyingSection {
+    width: 53vw;
+    font-size: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 300)));
+    text-align: center;
+    margin: 3%;
+}
+
+#programmingSection {
+    width: 47vw;
+    font-size: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 300)));
+    text-align: center;
+    margin: 3%;
+}
+
+.learnmoreBtn {
+    width: fit-content;
+    text-decoration: none;
+    border: #ececec 2px solid;
+    color: #ececec;
+    padding: 2%;
+    margin: 1%;
+    text-align: center;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+    transition: all 0.5s ease;
+}
+
+.learnmoreBtn:hover {
+    color: #181818;
+    background-color:  #ececec;
+    text-decoration: none;
+    text-align: center;
+}
+
+#aboutBanner {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    padding: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 300)));
+}
+
+.aboutContentIcons {
+    filter: invert(1);
+}
+
+#goalContainer {
+    width: 50%;
+    margin: 2%;
+    margin-top: 25%;
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 300)));
+}
+
+#placeandtimeContainer {
+    width: 50%;
+    margin: 2%;
+    margin-top: 25%;
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 300)));
+}
+
+li {
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+    margin: 1%;
+}
+
+#scheduleTable {
+    margin: 5%;
+}
+
+table > * {
+    margin: 1%;
+}
+
+th td{
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+table td{
+    border: 2px solid #ececec;
+}
+
+.tableHead {
+    font-size: calc(28px + (38 - 28) * ((100vw - 320px) / (1920 - 300)));
+}
+
+#scheduleHeader {
+    font-size: calc(28px + (38 - 28) * ((100vw - 320px) / (1920 - 300)));
+    margin: 2%;
+    color: #ececec;
+}
+
+#scheduleHeader > img {
+    filter: invert(1);
+}
+
+#contactBanner {
+    background-image: url("assets/background/Contact Banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+    padding: 0%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-size: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 300)));
+}
+
+#contactHeader {
+    width: 100%;
+    margin: 1%;
+    margin-top: 20%;
+}
+
+#contactHeader > div > img {
+    filter: invert(1);
+    margin: 4%;
+}
+
+#userinputs {
+    width: 100%;
+    margin: 3%;
+}
+
+#usermessage {
+    width: 100%;
+}
+
+#name {
+    width: 100%;
+}
+
+#useremail {
+    width: 100%;
+}
+
+label[for="name"] {
+    margin: 3%;
+}
+
+label[for="useremail"] {
+    margin: 3%;
+}
+
+button[type="submit"] {
+    width: fit-content;
+    text-decoration: none;
+    border: #ececec 2px solid;
+    color: #ececec;
+    padding: 2%;
+    margin: 1%;
+    text-align: center;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+    transition: all 0.5s ease;
+    background-color: transparent;
+}
+
+button[type="submit"]:hover {
+    color: #181818;
+    background-color:  #ececec;
+    text-decoration: none;
+    text-align: center;
+}
+
+#programmingBackgroundContent {
+    width: 50%;
+    margin: 2%;
+    font-size: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 300)));
+    text-align: center;
+}
+
+#programmingBackground {
+    background-color: rgba(24, 24, 24, 0.8);
+}
+
+#programmingGetStarted {
+    border: #ececec 2px solid;
+    color: #ececec;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+    padding: 4%;
+    margin: 3%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+}
+
+#programmingGetStarted:hover {
+    color: #181818;
+    background-color:  #ececec;
+    text-decoration: none;
+    text-align: center;
+}
+
+.visionMissionContentIcons {
+    filter: invert(1);
+    margin: 0.4%;
+}
+
+#visionMission {
+    width: 80%;
+}
+
+#missionVision {
+    width: 80%;
+    margin-top: 10%;
+}
+
+.visionContainer {
+    width: 50%;
+    margin: 2%;
+    margin-top: 25%;
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 300)));
+    padding: 1%;
+}
+
+.missionContainer {
+    width: 50%;
+    margin: 2%;
+    margin-top: 25%;
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 300)));
+    padding: 1%;
+}
+
+#courseOutline {
+    width: 100%;
+}
+
+#courseOutlineHeader {
+    width: 100%;
+    text-align: center;
+}
+#HTMLCourse {
+    background-color: #c94700;
+    width: 100%;
+}
+
+#CSSCourse {
+    background-color: #005f98;
+    width: 100%;
+}
+
+#JSCourse {
+    background-color: #a58900;
+    width: 100%;
+}
+
+#HTMLCourseOutline {
+    margin: 2%;
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 300)));
+}
+
+#CSSCourseOutline {
+    margin: 2%;
+   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 300)));
+}
+
+#JSCourseOutline {
+    margin: 2%;
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 300)));
+}
+
+iframe {
+    width: 60vw;
+    height: 90vh;
+    margin: 4%;
+}
+
+#projectHeader {
+    width: 100%;
+}
+
+#projectHeader > * {
+    margin: 2%;
+}
+
+#thingsNeededContent {
+    margin: 1%;
+}
+
+#thingsNeededIcons > * {
+    margin: 2%;
+}
+
+#projects > div > h3 {
+    margin: 4%;
+}
+
+#cyberbullyingBackgroundContent {
+    width: 50%;
+    margin: 2%;
+    font-size: calc(35px + (45 - 35) * ((100vw - 320px) / (1920 - 300)));
+    text-align: center;
+}
+
+#cyberbullyingBackground {
+    background-color: rgba(24, 24, 24, 0.6);
+}
+
+#cyberbullyingGetStarted {
+    border: #ececec 2px solid;
+    color: #ececec;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+    padding: 4%;
+    margin: 3%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+}
+
+#cyberbullyingGetStarted:hover {
+    color: #181818;
+    background-color:  #ececec;
+    text-decoration: none;
+    text-align: center;
+}
+
+#introCyberbullying {
+    width: 80%;
+}
+
+#introCyberbullyingContent {
+    width: 70%;
+    margin-top: 1%;
+}
+
+#countryContainerContent {
+    width: 40%;
+}
+
+#countryContainerImage {
+    width: 40%;
+}
+
+#differenceContainer {
+    width: 80%;
+}
+
+#jokeContent, #cyberBullyingContent {
+    margin: 2%;
+}
+
+#introLesson {
+    width: 80%;
+}
+
+#cyberbullyingEffectsContainer {
+    width: 80%;
+}
+
+#myBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 5%; 
+    right: 5%; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #ececec; 
+    color: #181818; 
+    cursor: pointer; 
+    padding: 1.5%; 
+    border-radius: 10px; 
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+}
+  
+#myBtn:hover {
+    background-color: #181818;
+    color:  #ececec;
+}
+
+#registrationCard {
+    width: 90%;
+    height: 100%;
+    margin: 3%;
+}
+
+#registrationCardHeader {
+    width: 50vw;
+    height: 90vh;
+    background-color: #181818;
+    color: #ececec;
+}
+
+#registrationCardContent {
+    width: 50vw;
+    height: 90vh;
+    background-color: rgba(24, 24, 24, 0.9);
+}
+
+#registrationCardHeader > header > h1 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+label {
+    width: 40%;
+    margin: 2%;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+    padding: 2%;
+}
+
+#submitRegistration {
+    width: fit-content;
+    text-decoration: none;
+    border: #ececec 2px solid;
+    color: #ececec;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+    transition: all 0.5s ease;
+    border-radius: 20px;
+}
+
+#submitRegistration:hover {
+    color: #181818;
+    background-color:  #ececec;
+    text-decoration: none;
+    text-align: center;
+}
+
+select {
+    background-color: transparent;
+    border: transparent;
+    border-bottom-color: #ececec;
+    border-bottom-style: solid;
+    color: #ececec;
+    font-size: calc(12px + (22 - 12) * ((100vw - 320px) / (1920 - 300)));
+    size: 4;
+}
+
+option {
+    background-color: #181818;
+}
+
+input[name="firstName"]:invalid, input[name="lastName"]:invalid, input[name="email"]:invalid, input[name="age"]:invalid {
+    border-bottom-color: #ca2525;
+}
+
+#submitConcern {
+    padding: 20%;
+    margin: 10%;
+}

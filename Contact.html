@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/rwq3huh.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script>
+            function SubConcern (){
+                $.ajax({
+                    url:"https://api.apispreadsheets.com/data/7790/",
+                    type:"post",
+                    data:$("#userinputs").serializeArray(),
+                        success: function(){
+                            alert("Form Data Submitted");
+                        },
+                        error: function(){
+                            alert("There was an error")
+                        }
+                });
+            };
+        </script>
+    </head>
+
+    <body>
+        <div id="navIcon">
+            <img src="assets/icon/Menu Icon.png" alt="Menu" width="100%" height="100%">
+        </div>
+
+        <nav id="navContainer">
+		    <div id="navSection" class="flexContainer flex--justifyContent flex--column">
+                <a class="navContent flexContainer flex--alignItems flex--row" href="Home.html">
+                    <img src="assets/icon/Home Icon.png" alt="Home" width="100%" height="100%">
+                    <div class="navText">Home</div>
+                </a>
+
+                <a class="navContent flexContainer flex--alignItems flex--row" href="Programming Workshop.html">
+                    <img src="assets/icon/Code Icon.png" alt="Code" width="100%" height="100%">
+                    <div class="navText">Programming Workshop</div>
+                </a>
+                
+                <a class="navContent flexContainer flex--alignItems flex--row bottomBorder" href="Cyberbullying Awareness Workshop.html">
+                    <img src="assets/icon/CB Icon.png" alt="Cyberbullying" width="100%" height="100%">
+                    <div class="navText">Cyberbullying Awareness Workshop</div>
+                </a>
+
+                <a class="navContent flexContainer flex--alignItems flex--row" href="About.html">
+                    <img src="assets/icon/About Icon.png" alt="About" width="100%" height="100%">
+                    <div class="navText">About</div>
+                </a>
+
+                <a class="navContent flexContainer flex--alignItems flex--row" href="Contact.html">
+                    <img src="assets/icon/Contact Icon.png" alt="Contact" width="100%" height="100%">
+                    <div class="navText">Contact</div>
+                </a>
+            </div>
+        </nav>
+        
+        <header class="flexContainer flex--justifyContent flex--alignItems" id="contactBanner">
+            <h1>Contact Us</h1>
+        </header>
+        <main class="flexContainer flex--justifyContent flex--wrap">
+            <div id="contactHeader" class="flexContainer flex--flex-start">
+                <div class="flexContainer flex--row flex--justifyContent flex--alignItems">
+                    <header><h2 style="font-size: calc(34px + (44 - 34) * ((100vw - 320px) / (1920 - 300)));">Email Us</h2></header>
+                    <img src="assets/icon/Contact Icon.png" alt="Goal; Bullseye" width="15%" height="auto">
+                </div>
+            </div>
+
+            <form id="userinputs">
+                <div class="flexContainer flex--justifyContent">
+                   <label for="name">Your Name:</label><input type="text" name="name" id="name">
+                   <label for="useremail">Your Email:</label><input type="email" name="useremail" id="useremail">
+                </div>
+
+                <div class="flexContainer flex--justifyContent">
+                    <label for="usermessage">Your Message:</label><input type="text" name="usermessage" id="usermessage">
+                </div>
+
+                
+            </form>
+
+            <div class="flexContainer flex--flex-end">
+                <button type="submit" id="submitConcern" onclick="SubConcern()"><strong>Submit</strong></button>
+            </div>
+        </main>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
