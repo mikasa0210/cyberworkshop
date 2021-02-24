@@ -4,23 +4,6 @@
         <title>Contact</title>
         <link type="text/css" rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://use.typekit.net/rwq3huh.css">
-
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <script>
-            function SubConcern (){
-                $.ajax({
-                    url:"https://api.apispreadsheets.com/data/7790/",
-                    type:"post",
-                    data:$("#userinputs").serializeArray(),
-                        success: function(){
-                            alert("Form Data Submitted");
-                        },
-                        error: function(){
-                            alert("There was an error")
-                        }
-                });
-            };
-        </script>
     </head>
 
     <body>
@@ -94,5 +77,7 @@
         <button onclick="topFunction()" id="myBtn" title="Go to top">Go To Top</button>
 
         <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
     </body>
 </html>

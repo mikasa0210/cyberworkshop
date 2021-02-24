@@ -41,10 +41,32 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function removeSubForm() {
-  submitRegistration.removeAttribute("onclick");
-}
+function SubForm (){
+  $.ajax({
+      url:"https://api.apispreadsheets.com/data/7748/",
+      type:"post",
+      async: false,
+      data:$("#registrationForm").serializeArray(),
+      success: function(){
+          alert("Form Data Submitted");
+          alert("The website is specifically made for PC. If you are using a mobile device, expect that the layout might change.");
+      },
+      error: function(){
+          alert("There was an error")
+      }
+  });
+};
 
-function addSubForm() {
-  submitRegistration.setAttribute("onclick", "SubForm()");
-}
+function SubConcern (){
+  $.ajax({
+      url:"https://api.apispreadsheets.com/data/7790/",
+      type:"post",
+      data:$("#userinputs").serializeArray(),
+          success: function(){
+              alert("Form Data Submitted");
+          },
+          error: function(){
+              alert("There was an error")
+          }
+  });
+};

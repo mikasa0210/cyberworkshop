@@ -12,27 +12,6 @@
                 background-size: cover;
             }
         </style>
-
-        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <script>
-            function SubForm (){
-                $.ajax({
-                    url:"https://api.apispreadsheets.com/data/7748/",
-                    type:"post",
-                    async: false,
-                    data:$("#registrationForm").serializeArray(),
-                    success: function(){
-                        alert("Form Data Submitted");
-                        alert("The website is specifically made for PC. If you are using a mobile device, expect that the layout might change.");
-                    },
-                    error: function(){
-                        alert("There was an error")
-                    }
-                });
-            };
-
-        </script>
-        <script src="script.js"></script>
     </head>
 
     <body>
@@ -42,7 +21,7 @@
 
         <nav id="navContainer">
 		    <div id="navSection" class="flexContainer flex--justifyContent flex--column">
-                <a class="navContent flexContainer flex--alignItems flex--row" href="Home.html">
+                <a class="navContent flexContainer flex--alignItems flex--row" href="index.html">
                     <img src="assets/icon/Home Icon.png" alt="Home" width="100%" height="100%">
                     <div class="navText">Home</div>
                 </a>
@@ -137,5 +116,8 @@
                 </div>
             </div>
         </main>
+
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     </body>
 </html>
