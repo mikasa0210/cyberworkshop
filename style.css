@@ -555,14 +555,14 @@ iframe {
 
 #registrationCardHeader {
     width: 50vw;
-    height: 90vh;
+    height: 70vh;
     background-color: #181818;
     color: #ececec;
 }
 
 #registrationCardContent {
     width: 50vw;
-    height: 90vh;
+    height: 70vh;
     background-color: rgba(24, 24, 24, 0.9);
 }
 
