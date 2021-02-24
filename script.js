@@ -14,8 +14,8 @@ function hideNav() {
 }
 
 //show nav
-navIcon.onmouseover = function() {showNav();}
-navContainer.onmouseover = function() {showNav();}
+navIcon.onmouseover = function() {showNav();};
+navContainer.onmouseover = function() {showNav();};
 
 //hide nav
 navIcon.onmouseout = function() {hideNav();}

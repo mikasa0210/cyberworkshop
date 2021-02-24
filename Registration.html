@@ -24,7 +24,6 @@
                     success: function(){
                         alert("Form Data Submitted");
                         alert("The website is specifically made for PC. If you are using a mobile device, expect that the layout might change.");
-                        window.location.href = "Home.html"
                     },
                     error: function(){
                         alert("There was an error")
@@ -36,7 +35,45 @@
         <script src="script.js"></script>
     </head>
 
-    <body class="flexContainer flex--justifyContent flex--alignItems">
+    <body>
+        <div id="navIcon">
+            <img src="assets/icon/Menu Icon.png" alt="Menu" width="100%" height="100%">
+        </div>
+
+        <nav id="navContainer">
+		    <div id="navSection" class="flexContainer flex--justifyContent flex--column">
+                <a class="navContent flexContainer flex--alignItems flex--row" href="Home.html">
+                    <img src="assets/icon/Home Icon.png" alt="Home" width="100%" height="100%">
+                    <div class="navText">Home</div>
+                </a>
+
+                <a class="navContent flexContainer flex--alignItems flex--row" href="Programming Workshop.html">
+                    <img src="assets/icon/Code Icon.png" alt="Code" width="100%" height="100%">
+                    <div class="navText">Programming Workshop</div>
+                </a>
+                
+                <a class="navContent flexContainer flex--alignItems flex--row bottomBorder" href="Cyberbullying Awareness Workshop.html">
+                    <img src="assets/icon/CB Icon.png" alt="Cyberbullying" width="100%" height="100%">
+                    <div class="navText">Cyberbullying Awareness Workshop</div>
+                </a>
+
+                <a class="navContent flexContainer flex--alignItems flex--row" href="Registration.html">
+                    <img src="assets/icon/Registration Icon.png" alt="About" width="100%" height="100%">
+                    <div class="navText">Registration</div>
+                </a>
+
+                <a class="navContent flexContainer flex--alignItems flex--row" href="About.html">
+                    <img src="assets/icon/About Icon.png" alt="About" width="100%" height="100%">
+                    <div class="navText">About</div>
+                </a>
+
+                <a class="navContent flexContainer flex--alignItems flex--row" href="Contact.html">
+                    <img src="assets/icon/Contact Icon.png" alt="Contact" width="100%" height="100%">
+                    <div class="navText">Contact</div>
+                </a>
+            </div>
+        </nav>
+
         <main class="flexContainer flex--justifyContent flex--alignItems flex--row" id="registrationCard">
             <div id="registrationCardHeader" class="flexContainer flex--alignItems flex--justifyContent">
                 <header>
